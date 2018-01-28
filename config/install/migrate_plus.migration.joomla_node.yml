@@ -32,7 +32,10 @@ process:
     source: created
     callable: strtotime
   #changed: modified
-  #promote: featured
+  promote:
+    plugin: default_value
+    source: featured
+    default_value: false
   #revision_uid: revision_uid
   #revision_log: log
   #revision_timestamp: timestamp

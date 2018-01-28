@@ -39,7 +39,12 @@ process:
   # @todo this later
   field_legacy_category: catid
   field_alias: alias
-  field_link: url
+  'field_link/title':
+    plugin: get
+    source: title
+    plugin: get_default_value
+    source: alias
+  'field_link/uri': url
   # Some Drupal fields may have multiple components we may want to set
   # separately. For example, text fields may have summaries (teasers) in
   # addition to the full text value. We use / to separate the field name from
