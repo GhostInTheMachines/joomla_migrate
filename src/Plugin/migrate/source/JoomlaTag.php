@@ -12,7 +12,7 @@ use Drupal\migrate\Plugin\migrate\source\SqlBase;
  * methods you see below.
  *
  * This annotation tells Drupal that the name of the MigrateSource plugin
- * implemented by this class is "beer_term". This is the name that the migration
+ * implemented by this class is "joomla_tag". This is the name that the migration
  * configuration references with the source "plugin" key.
  *
  * @MigrateSource(

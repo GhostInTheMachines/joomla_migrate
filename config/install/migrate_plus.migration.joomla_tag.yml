@@ -13,9 +13,9 @@ label: Migrate tags from Joomla to taxonomy terms
 migration_group: joomla
 
 # Every migration must have a source plugin, which controls the delivery of our
-# source data. In this case, our source plugin has the name "beer_term", which
+# source data. In this case, our source plugin has the name "joomla_tag", which
 # Drupal resolves to the PHP class defined in
-# src/Plugin/migrate/source/BeerTerm.php.
+# src/Plugin/migrate/source/JoomlaTag.php.
 source:
   plugin: joomla_tag
 
@@ -83,7 +83,7 @@ process:
     source: modified_time
     callable: strtotime
 
-# We'll learn more about dependencies in beer_node - here, we leave them empty.
+# No dependencies in this module
 migration_dependencies: {}
 
 # By default, configuration entities (like this migration) are not automatically

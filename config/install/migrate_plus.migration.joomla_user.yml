@@ -1,6 +1,4 @@
-# Migration configuration for user accounts. We've described most of what goes
-# into migration configuration in migrate_plus.migration.beer_term.yml, so won't
-# repeat that here.
+# Migration configuration for user accounts.
 id: joomla_user
 label: Joomla Users
 migration_group: joomla

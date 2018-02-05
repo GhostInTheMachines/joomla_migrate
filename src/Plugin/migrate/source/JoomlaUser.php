@@ -6,7 +6,7 @@ use Drupal\migrate\Plugin\migrate\source\SqlBase;
 use Drupal\migrate\Row;
 
 /**
- * Source plugin for beer user accounts.
+ * Source plugin for Joomla user accounts.
  *
  * @MigrateSource(
  *   id = "joomla_user"

@@ -13,9 +13,9 @@ label: Migrate categories from Joomla to taxonomy terms
 migration_group: joomla
 
 # Every migration must have a source plugin, which controls the delivery of our
-# source data. In this case, our source plugin has the name "beer_term", which
+# source data. In this case, our source plugin has the name "joomla_category", which
 # Drupal resolves to the PHP class defined in
-# src/Plugin/migrate/source/BeerTerm.php.
+# src/Plugin/migrate/source/JoomlaCategory.php.
 source:
   plugin: joomla_category
 
@@ -67,9 +67,9 @@ process:
     # before the children, and in this case our source plugin is guaranteeing
     # that.
     migration: joomla_category
-    # 'style_parent' is the parent reference field from the source data. The
+    # 'joomla_category' is the parent reference field from the source data. The
     # result of this plugin is that the destination 'parent' field is populated
-    # with the Drupal term ID of the referenced style (or NULL if style_parent
+    # with the Drupal term ID of the referenced style (or NULL if joomla_category
     # was empty).
     source: parent_id
   'description/value': description
@@ -83,7 +83,7 @@ process:
     source: modified_time
     callable: strtotime
 
-# We'll learn more about dependencies in beer_node - here, we leave them empty.
+# no dependencies in this module
 migration_dependencies: {}
 
 # By default, configuration entities (like this migration) are not automatically

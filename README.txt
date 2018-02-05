@@ -1,13 +1,14 @@
 Synopsis
 
-At the top of the file there should be a short introduction and/ or overview that explains what the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
-
-This module currently extracts a collection of basic tables and fields from a Joomla 3.x CMS, transforms any fields over to the required Drupal 8.x format, then inserts data into a custom content type in Drupal named Legacy Content.
-
+Migration skeleton for Joomla Content Management System Migration.
 
 Motivation
 
 This project was started in an effort to make the process of moving from a Joomla 3.x CMS to Drupal 8.x easier for anyone who love Drupal 8 and wants to see more organizations use it.
+NOTE: Joomla environments can vary widely depending on how the site was setup.  Some of the migrations in this repository were performed by aggregating Joomla tables into several
+custom tables and then using the custom tables to do the import.
+
+If anyone finds consistent tables that could be built into this repository feel free to write them in and submit a pull request.
 
 Installation
 

@@ -1,4 +1,4 @@
-# Migration configuration for beer content.
+# Migration configuration for node content.
 id: joomla_node
 label: Joomla Pages
 migration_group: joomla
