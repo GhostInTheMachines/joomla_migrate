@@ -4,7 +4,7 @@ Migration skeleton for Joomla Content Management System Migration.
 
 Motivation
 
-This project was started in an effort to make the process of moving from a Joomla 3.x CMS to Drupal 8.x easier for anyone who love Drupal 8 and wants to see more organizations use it.
+This project was started in an effort to make the process of moving from a Joomla 3.x CMS to Drupal 8.x easier for anyone who loves Drupal 8 and wants to see more organizations use it.
 NOTE: Joomla environments can vary widely depending on how the site was setup.  Some of the migrations in this repository were performed by aggregating Joomla tables into several
 custom tables and then using the custom tables to do the import.
 
@@ -24,6 +24,7 @@ Assumptions:
   d. xi83f_languages
   e. xi83f_tags
   f. xi83f_users
+  g. xi83f_weblinks
   *** NOTE *** your prefix will be something other than xi83f_
 
 3. If you are migrating on a local development environment, you have setup a settings.local.php (directions can be found here URL: https://knpuniversity.com/screencast/drupal8-under-the-hood/debugging)
