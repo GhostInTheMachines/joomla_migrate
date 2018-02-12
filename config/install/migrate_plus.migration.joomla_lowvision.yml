@@ -7,18 +7,11 @@ source:
 destination:
   plugin: entity:node
 process:
-  # Hardcode the destination node type (bundle) as 'legacy_blog'.
+  # Hardcode the destination node type (bundle) as 'legacy_low_vision'.
   type:
     plugin: default_value
     default_value: legacy_low_vision
-  field_author: Author
-  title: Title
-  'body/format':
-    plugin: default_value
-    default_value: rich_text
-  'body/value': Content
-  field_category: Category
-  field_blog_tags: Tags
+
   # Another new process plugin - callback. This allows us to filter an incoming
   # source value through an arbitrary PHP function. The function called must
   # have one required argument.
@@ -26,10 +19,23 @@ process:
     plugin: callback
     # The 'registered' timestamp in the source data is a string of the form
     # 'yyyy-mm-dd hh:mm:ss', but Drupal wants a UNIX timestamp for 'created'.
-    source: Created
+    source: date_time
     callable: strtotime
-  field_email: Email
-
+  field_clinic_name: clinic_name
+  field_director: director
+  field_email: email
+  field_street: street
+  field_city: city
+  field_country: country
+  field_state: state
+  field_zipcode: zip_code
+  field_phone: phone
+  field_fax: fax
+  field_website: website
+  field_ages_served: ages_served
+  field_specialty: specialty
+  field_if_other: if_other_please_enter_
+  field_other_services: other_services
 migration_dependencies: {}
 
 # When a module is creating a custom content type it needs to add an
