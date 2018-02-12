@@ -26,7 +26,7 @@ process:
     callable: strtotime
   # This is a straight one to one copy since this is a custom table that
   # is not normally found in a Joomla installation
-  field_clinic_name: clinic_name
+  title: clinic_name
   field_director: director
   field_email: email
   field_street: street
