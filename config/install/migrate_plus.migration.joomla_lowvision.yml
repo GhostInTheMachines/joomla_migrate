@@ -1,4 +1,7 @@
-# Migration configuration for user accounts.
+# This is a custom table setup for a PHP Application that was
+# served up from inside the Joomla CMS
+# It is included here just as an example of how other custom databases
+# can be pulled into your migration
 id: joomla_low_vision
 label: Joomla Low Vision Providers
 migration_group: joomla
@@ -21,6 +24,8 @@ process:
     # 'yyyy-mm-dd hh:mm:ss', but Drupal wants a UNIX timestamp for 'created'.
     source: date_time
     callable: strtotime
+  # This is a straight one to one copy since this is a custom table that
+  # is not normally found in a Joomla installation
   field_clinic_name: clinic_name
   field_director: director
   field_email: email
