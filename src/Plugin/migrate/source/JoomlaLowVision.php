@@ -22,8 +22,8 @@ class JoomlaLowVision extends SqlBase {
     $database = $config->get('database');
     $prefix = $config->get('table_prefix');
     return $this->select('clinical_low_vision_service_providers2', 'jlv')
-                ->fields('jlv', ['ID', 'date_time', 'clinic_name', 'director', 'email',
-                  'street', 'zip_code', 'city', 'state', 'phone', 'tax', 'website', 'ages_served',
+                ->fields('jlv', ['id', 'date_time', 'clinic_name', 'director', 'email',
+                  'street', 'zip_code', 'city', 'state', 'phone', 'fax', 'website', 'ages_served',
                   'other_services', 'specialty', 'if_other_please_enter_', 'country']);
   }
 
@@ -32,7 +32,24 @@ class JoomlaLowVision extends SqlBase {
    */
   public function fields() {
     $fields = [
-      'ID' => $this->t('Account ID'),
+      'id' => $this->t('Account ID'),
+      'date_time' => $this->t('Creation Date'),
+      'clinic_name' => $this->t('Clinic Name'),
+      'director' => $this->t('Director'),
+      'email' => $this->t('Email'),
+      'street' => $this->t('Street Address'),
+      'city' => $this->t('City'),
+      'country' => $this->t('Country'),
+      'state' => $this->t('State'),
+      'zip_code' => $this->t('Zipcode'),
+      'phone' => $this->t('Phone'),
+      'fax' => $this->t('Fax'),
+      'website' => $this->t('Website'),
+      'ages_served' => $this->t('Ages Served'),
+      'specialty' => $this->t('Specialty Group'),
+      'if_other_please_enter_' => $this->t('Other Details'),
+      'other_services' => $this->t('Other Services'),
+
 
     ];
 
